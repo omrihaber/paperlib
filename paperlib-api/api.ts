@@ -23,6 +23,7 @@ import { ScrapeService } from "@/renderer/services/scrape-service";
 import { SmartFilterService } from "@/renderer/services/smartfilter-service";
 import { UISlotService } from "@/renderer/services/uislot-service";
 import { UIStateService } from "@/renderer/services/uistate-service";
+import {Process} from "../app/base/process-id";
 
 declare namespace PLAPI {
   const logService: Proxied<LogService>;
@@ -41,6 +42,7 @@ declare namespace PLAPI {
   const uiStateService: Proxied<UIStateService>;
   const preferenceService: Proxied<PreferenceService>;
   const uiSlotService: Proxied<UISlotService>;
+  const process: Proxied<Process>;
 }
 
 declare namespace PLMainAPI {
